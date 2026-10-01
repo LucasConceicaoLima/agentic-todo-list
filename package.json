@@ -1,0 +1,22 @@
+{
+  "name": "todo-agents-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Learning lab for AI coding agents using React/MUI, NestJS and automated tests.",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "tests"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run start:dev --workspace backend",
+    "test:backend": "npm run test --workspace backend",
+    "test:e2e": "npm run test:e2e --workspace tests",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
